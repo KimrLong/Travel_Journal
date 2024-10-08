@@ -1,0 +1,86 @@
+// Main Section
+.main-section {
+    background: image-url('/ireland_slea.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .main-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .learn-more-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  // Supporting Section
+  .supporting-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .supporting-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .tagline {
+    font-size: 1.5rem;
+    color: #6c757d;
+  }
+  
+  // Secondary Section
+  .secondary-section {
+    background: image-url('/coffee_slea.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .secondary-section h2 {
+    font-size: 3rem;
+  }
+  
+  // Discover Section
+  .discover-section {
+    padding: 60px 20px;
+    background-color: #e9ecef;
+    text-align: center;
+  }
+  
+  .discover-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  // Footer
+  .footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
