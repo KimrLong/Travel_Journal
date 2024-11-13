@@ -1,86 +1,114 @@
 // Main Section
 .main-section {
-    background: image-url('/ireland_slea.jpg') no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+  background: url('<%= asset_path("ireland_slea.jpeg") %>');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  position: relative;
+
+  // Overlay for better readability
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); // Adjust transparency as needed
+    z-index: 1;
   }
-  
-  .main-content h1 {
-    font-size: 4rem;
+
+  .main-content {
+    position: relative;
+    z-index: 2; // Ensures content is above the overlay
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .btn {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}
+
+// Supporting Section
+.supporting-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+    color: #6c757d;
+  }
+}
+
+// Secondary Section
+.secondary-section {
+  // background: url('<%= asset_path("coffee_slea.jpeg") %>');
+  background-size: cover;
+  padding: 80px 20px;
+  text-align: center;
+  color: rgb(4, 4, 4);
+
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+// Discover Section
+.discover-section {
+  padding: 60px 20px;
+  background-color: #e9ecef;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
   }
-  
-  .learn-more-btn {
+
+  .btn {
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2rem;
-    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #0056b3;
+    }
   }
-  
-  .learn-more-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  // Supporting Section
-  .supporting-section {
-    padding: 60px 20px;
-    background-color: #f8f9fa;
-    text-align: center;
-  }
-  
-  .supporting-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .tagline {
-    font-size: 1.5rem;
-    color: #6c757d;
-  }
-  
-  // Secondary Section
-  .secondary-section {
-    background: image-url('/coffee_slea.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 80px 20px;
-    text-align: center;
-    color: white;
-  }
-  
-  .secondary-section h2 {
-    font-size: 3rem;
-  }
-  
-  // Discover Section
-  .discover-section {
-    padding: 60px 20px;
-    background-color: #e9ecef;
-    text-align: center;
-  }
-  
-  .discover-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  // Footer
-  .footer {
-    background-color: #343a40;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-  
-  .footer p {
+}
+
+// Footer
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+
+  p {
     margin: 0;
   }
-  
+}
